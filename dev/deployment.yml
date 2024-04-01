@@ -22,7 +22,7 @@ spec:
           imagePullPolicy: Always
           name: api
           ports:
-            - containerPort: 3000
+            - containerPort: 5000
           resources:
             requests:
               cpu: 150m
