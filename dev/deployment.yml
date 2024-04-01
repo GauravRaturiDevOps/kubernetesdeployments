@@ -18,7 +18,7 @@ spec:
         app: api
     spec:
       containers:
-        - image: 'vikrant1020/react:latest'
+        - image: 'seasiainfotechdocker/nodekube12:latest'
           imagePullPolicy: Always
           name: api
           ports:
