@@ -4,7 +4,7 @@ metadata:
   labels:
     app.kubernetes.io/instance: yoyo
   name: api
-  namespace: gs
+  namespace: deployment
 spec:
   replicas: 2
   selector:
