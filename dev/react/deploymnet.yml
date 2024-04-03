@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: react
+  namespace: deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: react
+  strategy:
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: react
+    spec:
+      containers:
+        - image: 'seasiainfotechdocker/reactkube'
+          imagePullPolicy: Always
+          name: react
+          ports:
+            - containerPort: 5000
+          resources:
+            requests:
+              cpu: 150m
+      restartPolicy: Always
