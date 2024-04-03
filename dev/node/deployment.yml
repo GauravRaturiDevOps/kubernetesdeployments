@@ -1,21 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  labels:
-    app.kubernetes.io/instance: yoyo
-  name: api
+  name: node
   namespace: deployment
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: api
+      app: node
   strategy:
     type: RollingUpdate
   template:
     metadata:
       labels:
-        app: api
+        app: node
     spec:
       containers:
         - image: 'seasiainfotechdocker/nodekube12:47'
