@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: django
+  namespace: deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: django
+  strategy:
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: django
+    spec:
+      containers:
+        - image: 'seasiainfotechdocker/djangokube'
+          imagePullPolicy: Always
+          name: django
+          ports:
+            - containerPort: 8000
+          resources:
+            requests:
+              cpu: 150m
+      restartPolicy: Always
