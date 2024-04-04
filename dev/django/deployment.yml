@@ -18,7 +18,7 @@ spec:
       containers:
         - image: 'seasiainfotechdocker/djangokube'
           imagePullPolicy: Always
-          name: django
+        - image: 'seasiainfotechdocker/djangokube:1'
           ports:
             - containerPort: 8000
           resources:
