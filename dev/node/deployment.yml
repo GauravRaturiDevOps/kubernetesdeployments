@@ -18,7 +18,7 @@ spec:
       containers:
         - image: 'seasiainfotechdocker/nodekube12:47'
           imagePullPolicy: Always
-          name: api
+        - image: 'seasiainfotechdocker/nodekube12:6'
           ports:
             - containerPort: 5000
           resources:
