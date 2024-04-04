@@ -15,10 +15,10 @@ spec:
       labels:
         app: django
     spec:
-      containers:
-        - image: 'seasiainfotechdocker/djangokube'
-          imagePullPolicy: Always
+      containers:          
         - image: 'seasiainfotechdocker/djangokube:4'
+          imagePullPolicy: Always
+          name: api
           ports:
             - containerPort: 8000
           resources:
