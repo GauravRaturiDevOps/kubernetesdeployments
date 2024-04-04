@@ -18,7 +18,7 @@ spec:
         app: node
     spec:
       containers:
-        - image: 'seasiainfotechdocker/nodekube12:47'
+        - image: 'seasiainfotechdocker/nodekube12:7'
           imagePullPolicy: Always
           name: api
           ports:
