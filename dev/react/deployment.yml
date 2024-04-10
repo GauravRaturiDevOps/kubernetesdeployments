@@ -22,7 +22,7 @@ spec:
           imagePullPolicy: Always
           name: react
           ports:
-            - containerPort: 5000
+            - containerPort: 80
           resources:
             requests:
               cpu: 150m
