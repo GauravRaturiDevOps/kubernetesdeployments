@@ -18,7 +18,7 @@ spec:
         app: react
     spec:
       containers:
-        - image: 'seasiainfotechdocker/reactkube:7'
+        - image: 'seasiainfotechdocker/reactkube:8'
           imagePullPolicy: Always
           name: react
           ports:
